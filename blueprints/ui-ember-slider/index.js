@@ -8,8 +8,7 @@ module.exports = {
 	},
 
 	afterInstall: function() {
-		return this.addBowerPackagesToProject([
-      { name: 'seiyria-bootstrap-slider', target: '~6.0.6'  }
-    ]);
+		// add the npm package to the project
+		return this.addPackageToProject('bootstrap-slider', '^9.7.2');
 	}
 };
